@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Photoshop Оқыту - Кіру</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url('ааа.jpg'); /* ← Сіздің фондық суретіңіз */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        a.button {
+            text-decoration: none;
+            background-color: rgba(255,255,255,0.9);
+            color: #333;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        a.button:hover {
+            background-color: #ffcc00;
+            color: black;
+            transform: scale(1.05);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+        }
+    </style>
+</head>
+<body>
+    <h1>Photoshop Оқыту Курсы</h1>
+    <p>Графикалық дизайн әлеміне қош келдіңіз! Кәсіби сурет өңдеуді бірге үйренейік.</p>
+    <a href="main.html" class="button">Бастау</a>
+
+    <footer>&copy;|Sadu Aizhamal Erzhanqyzy|</footer>
+</body>
+</html>
