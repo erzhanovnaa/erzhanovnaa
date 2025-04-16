@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Photoshop оқыту</title>
+    
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Times шрифтін қолдану */
+            background: url('ддд.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            scroll-behavior: smooth;
+            font-style: italic; /* Барлық мәтінді курсивке айналдыру */
+        }
+
+        header, nav, section, footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 10px auto;
+            max-width: 900px;
+            padding: 20px;
+            border-radius: 12px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        #location {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 5px;
+            font-weight: 400;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 6px 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .accordion {
+            cursor: pointer;
+            padding: 16px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+            outline: none;
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
+            transition: 0.4s;
+            border-radius: 8px;
+            margin-top: 12px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .accordion:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .panel {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #ddd;
+            font-weight: 300;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            background: rgba(255,255,255,0.1);
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            z-index: 999;
+            font-size: 14px;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Тіл ауыстырғыш -->
+<div class="lang-toggle" onclick="toggleLang()">EN / ҚАЗ</div>
+
+<header>
+    <h1 id="title">Adobe Photoshop графикалық редакторын оқыту әдістемесі</h1>
+    <p id="location">Батырмаларды басу арқылы толық ақпарат ала аласыз!</p>
+</header>
+
+<nav>
+    <a href="kirispe.html">Кіріспе</a>
+    <a href="tools.html">Құралдар</a>
+    <a href="surret.html">Сурет</a>
+    <a href="jetildiru.html">Жетілдіру</a>
+    <a href="praktika.html">Практика</a>
+</nav>
+
+<section id="kirispe">
+    <button class="accordion" id="acc1">1. Кіріспе</button>
+    <div class="panel">
+        <p id="p1">Adobe Photoshop — графикалық редактор, сурет өңдеу және дизайн жасауға арналған ең танымал құралдардың бірі.</p>
+    </div>
+</section>
+
+<section id="negizgi">
+    <button class="accordion" id="acc2">2. Негізгі құралдар мен функциялар</button>
+    <div class="panel">
+        <ul id="p2">
+            <li>Жұмыс аймағы және панельдер</li>
+            <li>Слойлар (қабаттар)</li>
+            <li>Құралдар панелі: Brush, Eraser, Move Tool</li>
+            <li>Түс, мәтін, градиент</li>
+        </ul>
+    </div>
+</section>
+
+<section id="surret">
+    <button class="accordion" id="acc3">3. Суреттермен жұмыс</button>
+    <div class="panel">
+        <ul id="p3">
+            <li>Сурет импорттау</li>
+            <li>Маска қолдану</li>
+            <li>Ретушь (Spot Healing, Clone Stamp)</li>
+            <li>Фильтрлер</li>
+        </ul>
+    </div>
+</section>
+
+<section id="jetildiru">
+    <button class="accordion" id="acc4">4. Жетілдірілген функциялар</button>
+    <div class="panel">
+        <ul id="p4">
+            <li>Смарт объектілер</li>
+            <li>Анимация негіздері</li>
+            <li>Плагиндер</li>
+            <li>Дизайн жасау</li>
+        </ul>
+    </div>
+</section>
+
+<section id="praktika">
+    <button class="accordion" id="acc5">5. Практикалық тапсырмалар</button>
+    <div class="panel">
+        <ul id="p5">
+            <li>Сурет өңдеу</li>
+            <li>Логотип жасау</li>
+            <li>Коллаж немесе постер</li>
+            <li>Ретушь</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    &copy; erzhanownaaa
+</footer>
+
+<script>
+    // Accordion
+    const acc = document.querySelectorAll(".accordion");
+    acc.forEach((el) => {
+        el.addEventListener("click", function () {
+            this.classList.toggle("active");
+            let panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    });
+
+    // Тіл ауыстыру
+    let lang = 'kk';
+    function toggleLang() {
+        if (lang === 'kk') {
+            document.getElementById("title").innerText = "Adobe Photoshop Teaching Methodology";
+            document.getElementById("location").innerText = "Click the buttons to see full content!";
+            document.getElementById("acc1").innerText = "1. Introduction";
+            document.getElementById("acc2").innerText = "2. Basic Tools and Functions";
+            document.getElementById("acc3").innerText = "3. Working with Images";
+            document.getElementById("acc4").innerText = "4. Advanced Features";
+            document.getElementById("acc5").innerText = "5. Practical Tasks";
+            document.getElementById("p1").innerText = "Adobe Photoshop is one of the most popular tools for image editing and graphic design.";
+            document.getElementById("p2").innerHTML = "<li>Workspace and Panels</li><li>Layers</li><li>Toolbar: Brush, Eraser, Move Tool</li><li>Color, Text, Gradient</li>";
+            document.getElementById("p3").innerHTML = "<li>Import Image</li><li>Using Masks</li><li>Retouch (Spot Healing, Clone Stamp)</li><li>Filters</li>";
+            document.getElementById("p4").innerHTML = "<li>Smart Objects</li><li>Animation Basics</li><li>Plugins</li><li>Design Projects</li>";
+            document.getElementById("p5").innerHTML = "<li>Edit images</li><li>Create a logo</li><li>Collage or poster</li><li>Retouching</li>";
+            lang = 'en';
+        } else {
+            location.reload();
+        }
+    }
+</script>
+
+</body>
+</html>

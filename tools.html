@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Құралдар - Adobe Photoshop оқыту</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: url('ддд.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-style: italic;
+            line-height: 1.6;
+            animation: fadeInBody 1s ease-in-out;
+        }
+
+        @keyframes fadeInBody {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+            border-radius: 10px;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 0;
+            text-align: center;
+            animation: fadeInNav 2s ease-in-out;
+        }
+
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #444;
+            transform: translateY(-3px);
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            animation: fadeInSection 2s ease-in-out;
+        }
+
+        @keyframes fadeInSection {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        section h2 {
+            font-size: 32px;
+        }
+
+        section p {
+            font-size: 18px;
+        }
+
+        .tools-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .tool-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .tool-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Тақырып -->
+<header>
+    <h1>Adobe Photoshop құралдары</h1>
+    <p>Photoshop бағдарламасындағы негізгі құралдар мен олардың мүмкіндіктері</p>
+</header>
+
+<!-- Навигация -->
+<nav>
+    <a href="kirispe.html">Кіріспе</a>
+    <a href="tools.html">Құралдар</a>
+    <a href="surret.html">Сурет</a>
+    <a href="jetildiru.html">Жетілдіру</a>
+    <a href="praktika.html">Практика</a>
+</nav>
+
+<!-- Негізгі бөлім -->
+<section>
+    <h2>Негізгі құралдар және жұмыс аймағы</h2>
+    <p>Photoshop-та жұмыс істеу үшін алдымен оның жұмыс аймағымен танысу қажет. Жұмыс аймағы — құралдар панелі, қабаттар панелі, қасиеттер аймағы және басқа да интерфейс элементтері орналасқан орта.</p>
+
+    <h3>1. Жұмыс аймағы және панельдер</h3>
+    <p>Жұмыс аймағында сіз суретпен жұмыс істейтін негізгі кеңістік орналасады. Панельдер арқылы қабаттарды, түс параметрлерін, тарихты және тағы басқа функцияларды басқара аласыз.</p>
+
+    <h3>2. Слойлар (Қабаттар)</h3>
+    <p>Слойлар арқылы әр элементті жеке басқаруға болады. Бұл суретке әр түрлі эффектілерді, фильтрлерді қолдануды жеңілдетеді.</p>
+
+    <h3>3. Құралдар панелі</h3>
+    <p>Photoshop-тағы құралдар панелі әртүрлі әрекеттерді орындауға мүмкіндік береді. Әр құрал белгілі бір функцияны атқарады және оларды дұрыс пайдалану – сапалы нәтиженің кепілі.</p>
+
+    <div class="tools-gallery">
+        <div class="tool-item">
+            <img src="кылкалам.jpeg" alt="Brush Tool">
+            <h3>Brush Tool</h3>
+            <p>Сурет салу, бояу үшін қолданылады.</p>
+        </div>
+        <div class="tool-item">
+            <img src="козгалыс.jpg" alt="Move Tool">
+            <h3>Move Tool</h3>
+            <p>Объектілерді орын ауыстыру үшін қажет.</p>
+        </div>
+        <div class="tool-item">
+            <img src="ластик.jpg" alt="Eraser Tool">
+            <h3>Eraser Tool</h3>
+            <p>Суреттегі қажетсіз бөлікті өшіреді.</p>
+        </div>
+        <div class="tool-item">
+            <img src="лассо.jpg" alt="Lasso Tool">
+            <h3>Lasso Tool</h3>
+            <p>Еркін таңдау жасауға арналған құрал.</p>
+        </div>
+        <div class="tool-item">
+            <img src="текст.jpeg" alt="Text Tool">
+            <h3>Text Tool</h3>
+            <p>Суретке мәтін енгізу үшін.</p>
+        </div>
+        <div class="tool-item">
+            <img src="град.jpg" alt="Gradient Tool">
+            <h3>Gradient Tool</h3>
+            <p>Түстер арасында өтуді жасау құралы.</p>
+        </div>
+    </div>
+
+    <h3>4. Түс, мәтін, градиент</h3>
+    <p>Photoshop түс палитрасы мен мәтіндік редактор арқылы кәсіби графика жасауға мүмкіндік береді. Градиент құралы — түстер арасындағы нәзік өтуді қамтамасыз етеді.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy;  |erzhanownaaa|
+</footer>
+
+</body>
+</html>

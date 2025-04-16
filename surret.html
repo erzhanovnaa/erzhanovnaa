@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Суреттермен жұмыс – Photoshop</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: url('ддд.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-style: italic;
+            line-height: 1.6;
+            animation: fadeInBody 1s ease-in-out;
+        }
+
+        @keyframes fadeInBody {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: rgba(255,255,255,0.85);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            animation: fadeInSection 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInSection {
+            0% {opacity: 0; transform: translateY(20px);}
+            100% {opacity: 1; transform: translateY(0);}
+        }
+
+        section h2 {
+            font-size: 30px;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        section h3 {
+            font-size: 22px;
+            margin-top: 25px;
+            color: #444;
+        }
+
+        section p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Суреттермен жұмыс</h1>
+    <p>Photoshop бағдарламасында суреттерді өңдеу әдістері</p>
+</header>
+
+<nav>
+    <a href="kirispe.html">Кіріспе</a>
+    <a href="tools.html">Құралдар</a>
+    <a href="surret.html">Сурет</a>
+    <a href="jetildiru.html">Жетілдіру</a>
+    <a href="praktika.html">Практика</a>
+</nav>
+
+<section>
+    <h2>Adobe Photoshop-та суреттермен жұмыс істеу</h2>
+
+    <h3>1. Сурет импорттау</h3>
+    <p>Суретті ашу үшін: <strong>File → Open</strong> мәзірі арқылы қалаған суретті таңдап, жұмыс кеңістігіне әкелеміз. Сонымен қатар файлды жай ғана Photoshop терезесіне сүйреп апаруға да болады.</p>
+
+    <h3>2. Маска қолдану (Layer Mask)</h3>
+    <p>Қабатқа маска қосқан кезде, маска арқылы суреттің қажет емес бөлігін жасырып қоюға болады. Қара түспен боялған аймақтар көрінбей қалады, ал ақ түспен боялған бөліктер қайта көрінеді. Бұл әдіс объектілерді фонынан ажыратуға өте тиімді.</p>
+
+    <h3>3. Ретушь құралдары</h3>
+
+    <p><strong>Spot Healing Brush Tool</strong> – беттегі ұсақ дақтар немесе ақауларды автоматты түрде өшіреді. Тек проблемалы жерге басу жеткілікті, Photoshop айналасындағы пиксельдермен алмастырады.</p>
+
+    <p><strong>Clone Stamp Tool</strong> – бір аймақтан үлгі алып (Alt пернесін басып), оны басқа аймаққа көшіріп салады. Бұл әдіс суреттегі қажетсіз объектілерді жасыру немесе фонды толықтыру үшін қолданылады.</p>
+
+    <h3>4. Фильтрлер</h3>
+    <p><strong>Gaussian Blur</strong> – суреттің кейбір бөлігін бұлдыратып, басты нысанды ерекшелеуге көмектеседі.</p>
+    <p><strong>Sharpen</strong> – суреттің айқындылығын арттырады, детальдарды нақты көрсету үшін қолданылады.</p>
+    <p><strong>Camera Raw Filter</strong> – түс балансы, жарық, көлеңке, контраст сияқты параметрлерді дәл реттеуге арналған қуатты құрал.</p>
+</section>
+
+<footer>
+    &copy;  |erzhanownaaa|
+</footer>
+
+</body>
+</html>
